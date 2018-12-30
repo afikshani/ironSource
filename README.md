@@ -15,6 +15,9 @@ The following sevices are possible:
 
 4. Create a new friendship ("follow him") with a follower of ironSource.
 
+
+****NOTE: IN ORDER TO CHANGE USER YOU NEED TO OPEN AN ACCOUNT, APPLY FOR CREDENTIALS AND WAIT FOR BEING CONFIRMED. ONCE YOU HAVE IT ALL, PUT IT IN THE RELEVANT FIELDS ON test_account.js FILE****
+
 Enjoy!
 
 AFIK SHANI SCHONWETTER
