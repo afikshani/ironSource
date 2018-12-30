@@ -5,8 +5,9 @@
  * access_token_secret
  * 
  * 
- * Read and Write permission within the token given to test account with user-name "afik21023201"
- * in order to change this account, do the following:
+ * Read and Write permission within the token given to test account (currenly user name is "afik21023201")
+ * 
+ * In order to change this test account, do the following:
  * 1) Enter to Twitter.com and create a new test account.
  * 2) Apply for being a developer with Twitter.
  * 3) Once you get approved, create a new app.
