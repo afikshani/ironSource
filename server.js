@@ -17,7 +17,7 @@ const UserConfig = require('./test_account.js'),
 
 // Server configurations
 const PORT = process.env.PORT || 8080;
-let app = express();
+const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -26,17 +26,17 @@ const client = new Twitter(UserConfig.twitterKeys);
 
 
 app.get('/postTweet', function (req, res) {
-    let someTweet = req.query.twt;
+    const someTweet = req.query.twt;
     tweeter.tweetNow(res, client, someTweet);
 });
 
 app.get('/getMyTweets', function (req, res) {
-    let count = req.query.count;
+    const count = req.query.count;
     searcher.myTweets(res, client, count);
 });
 
 app.get('/LikeTweetWith/:keyword', function (req, res) {
-    let keyword = req.params.keyword;
+    const keyword = req.params.keyword;
     searcher.keywordSearchAndLike(res, client, keyword);
 });
 
@@ -46,10 +46,10 @@ app.get('/joinIronSourceCommunity', function (req, res) {
 
 
 app.get('*', (req, res) => {
-    let firstService = "To tweet some message enter the url/postTweet?twt=message",
-    secondService = "To get the list of X most recent tweets (max val of X is 200) of the enter the url/getMyTweets?count=X",
-    thirdService = "To like a random tweet that contains a certain keyword please enter the url/LikeTweetWith/keyword",
-    fourthService = "To create a new friend with someone who follow ironSource as well enter the url/joinIronSourceCommunity";
+    const firstService = "To tweet some message enter the URL/postTweet?twt=message",
+    secondService = "To get the list of X most recent tweets (max val of X is 200) of the enter the URL/getMyTweets?count=X",
+    thirdService = "To like a random tweet that contains or is related for a certain keyword please enter the URL/LikeTweetWith/keyword",
+    fourthService = "To create a new friend with someone who follow ironSource as well enter the URL/joinIronSourceCommunity";
 
     res.end(stringFormat("Hey tester! \n\n You can do the following: \n\n {0} \n\n {1} \n\n {2} \n\n {3} \n\n Enjoy :)", firstService, secondService, thirdService, fourthService));
 });

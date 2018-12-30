@@ -17,13 +17,16 @@ module.exports = {
      */
 
     ironSource_BasedNetwork: function (res, client) {
-        let queryParams = {screen_name: 'ironSource'};
+        let queryParams = {
+            screen_name: 'ironSource'
+        };
         // The method gets the list of ironSource followers.
         client.get('followers/list', queryParams, function (err, data) {
             if (!err) {
-                let friendOfironSource = randomize(data.users);
+                const friendOfironSource = randomize(data.users);
+                queryParams.screen_name = friendOfironSource.screen_name;
                 // The method create a new follow on behalf of the test account
-                client.post('friendships/create', {screen_name: friendOfironSource.screen_name}, function (error, response) {
+                client.post('friendships/create', queryParams, function (error, response) {
                     if (error) {
                         res.send(error);
                     } else {
