@@ -16,7 +16,7 @@ const UserConfig = require('./test_account.js'),
     tweeter = require('./services/tweet.js');
 
 // Server configurations
-const PORT = 8080 || process.env.PORT;
+const PORT = process.env.PORT || 8080;
 let app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
