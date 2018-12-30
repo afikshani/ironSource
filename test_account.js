@@ -16,10 +16,10 @@
 
 module.exports = {
     twitterKeys: {
-        consumer_key: 'zRAB3Buh2AHNh1X6SKpQdgNuX',
-        consumer_secret: 'MkQygLgkSDborFAUlUoBTWDQmxY3C3I0NZTB12h9yRrM3gwKJC',
-        access_token_key: '1079503434603266048-YyWDDZbx35OWuel91QnJVwmgc8wsOP',
-        access_token_secret: '1GZxN6RpH2w337thFSEFsngvYkEs65DJpo1rx5gyCyNHd'
+        consumer_key: '7gIM40drkGuA7feRXwF10GLZS',
+        consumer_secret: 'MrKLBZvfK3ql7pKUo5h9VDdSHPUWBVvau4GeJWuEy5E4mYy0v7',
+        access_token_key: '1077229771506008069-yZRMVcmBpxRrpzVpnlLBlicNOFVA3W',
+        access_token_secret: 'ddTowToLGko99HLyWorxVNwNe3oOtk3XuHSwHedGAh3Bg'
     }
 }
 
