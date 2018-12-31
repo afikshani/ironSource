@@ -27,18 +27,23 @@ HOW TO GET A NEW TEST ACCOUNT:
 3) Once you get approved, create a new app.
 4) After doing that, findy your access tokens and all of the credentails.
 5) Type it in the relevant fields at the test_account.js file.
+6) Re-deploy the service to heroku.
 
 --------------------------------------------------------------------------------
 
 FINAL NOTES:
 
-1) This server is deployed at heroku at _____________
-2) Any current change regarding the access tokens has to updated on the web server as well at git.heroku
-3) Once the FrontEnd would be complete one should be asked to fill his credentials 
-Need some more edit 
+1) This server is deployed at heroku at https://desolate-river-25894.herokuapp.com/
 
---------------------------------------------------------------------------------
+2) Sample link to the service that will tweet a message (to thetest account).
+https://desolate-river-25894.herokuapp.com/postTweet?twt=msg
+** REPLACE THE msg IN ANY TWEET YOU WOULD LIKE TO BE POSTED
 
+3) Currently any change regarding the user's access tokens has to updated on the web server as well at the git repository of heroku using ''git heroku push master'' meaning new deploy to heroku-
+https://git.heroku.com/desolate-river-25894.git
+
+3) In the future, once the FrontEnd would be complete, one should be asked to fill his access tokens and we can send it would be possible to send those as parameters to the config file. 
+-> Doing that would cause the application to bu fully general and no need for re-deploy after nay change in the user. 
 
 --------------------------------------------------------------------------------
 
