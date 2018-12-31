@@ -35,7 +35,7 @@ FINAL NOTES:
 
 1) This server is deployed at heroku at https://desolate-river-25894.herokuapp.com/
 
-2) Sample link to the service that will tweet a message (to thetest account).
+2) Sample link to the service that will tweet a message (to the test account).
 https://desolate-river-25894.herokuapp.com/postTweet?twt=msg
 ** REPLACE THE msg IN ANY TWEET YOU WOULD LIKE TO BE POSTED
 
